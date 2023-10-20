@@ -3,11 +3,19 @@
 #include "QFileDialog"
 #include "QMessageBox"
 #include "SIRF.h"
+#include "QCloseEvent"
+
+#include <opencv2/highgui.hpp>
+#include <future>
+#include <iostream>
+#include <thread>
+#include <chrono>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    //setWindowFlags( Qt::Window | Qt::WindowTitleHint | Qt::CustomizeWindowHint | Qt::WindowMaximizeButtonHint | Qt::WindowMinimizeButtonHint);
     ui->setupUi(this);
 
 }
@@ -40,15 +48,13 @@ void MainWindow::on_StartScanerButton_clicked()
         QMessageBox::critical(this,"ImageScaner", "Не все файлы выбраны");
     }
     else{
-        ui->OpenTemplButton->setEnabled(false);
-        ui->OpenImageButton->setEnabled(false);
-        ui->StartScanerButton->setEnabled(false);
 
         SIRFDetector::Detection(templFileName.toStdString(), imageFileName.toStdString());
-
-        ui->OpenTemplButton->setEnabled(true);
-        ui->OpenImageButton->setEnabled(true);
-        ui->StartScanerButton->setEnabled(true);
     }
 }
 
+
+void MainWindow::closeEvent(QCloseEvent *event){
+    cv::destroyAllWindows();
+    QMainWindow::closeEvent(event);
+}

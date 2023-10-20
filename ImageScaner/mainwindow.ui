@@ -63,12 +63,12 @@
      <rect>
       <x>20</x>
       <y>80</y>
-      <width>171</width>
+      <width>191</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Выберите исходный картинку</string>
+     <string>Выберите исходное изображение</string>
     </property>
     <property name="textFormat">
      <enum>Qt::AutoText</enum>
