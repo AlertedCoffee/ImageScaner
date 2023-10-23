@@ -9,9 +9,9 @@
 using namespace cv;
 using namespace std;
 
-namespace SIRFDetector {
+namespace SIFTDetector {
 
-/**@brief Поиск изображений по SIRF.
+/**@brief Поиск изображений по SIFT.
         @param[in] templatePath путь к изображению для поиска (что ищем)
         @param[in] imagePath пусть к исходнику (где ищем)
     */
