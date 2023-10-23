@@ -28,8 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(ImageScaner
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        SIRF.cpp
-        SIRF.h
+        SIFT.cpp
+        SIFT.h
 
     )
 # Define target properties for Android with Qt 6 as:

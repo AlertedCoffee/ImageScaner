@@ -1,4 +1,4 @@
-#include "SIRF.h"
+#include "SIFT.h"
 
 
 using namespace cv;

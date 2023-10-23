@@ -2,7 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "QFileDialog"
 #include "QMessageBox"
-#include "SIRF.h"
+#include "SIFT.h"
 #include "QCloseEvent"
 
 #include <opencv2/highgui.hpp>
