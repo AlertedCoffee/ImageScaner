@@ -53,7 +53,7 @@ void MainWindow::on_StartScanerButton_clicked()
         }
 
     } catch (...) {
-        QMessageBox::critical(this, "ImageScaner", "С файлом что-то не так. (Возмжно на пути к нему есть кирилица)");
+        QMessageBox::critical(this, "ImageScaner", "С файлом что-то не так. (Возможно на пути к нему есть кириллица)");
     }
 }
 

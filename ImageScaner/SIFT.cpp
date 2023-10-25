@@ -92,7 +92,7 @@ namespace SIFTDetector {
 //                        Scalar::all(-1), std::vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
 //        imshow("SIFT Matches", matchImage);
 
-        // Отрисовка аннотированного вида отображения. Закомментирована отрисовка квадарта вокруг области совпадения.
+        // Отрисовка аннотированного вида отображения. Закомментирована отрисовка квадрата вокруг области совпадения.
 //        vector<Point> poly;
         for (size_t i = 0; i < goodMatches.size(); i++)
         {
