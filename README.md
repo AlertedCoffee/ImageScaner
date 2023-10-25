@@ -13,7 +13,7 @@
 ![Imgur](https://i.imgur.com/uSIp7oW.png)
 
 <br><br>
-Структура проетка:
+Структура проекта:
 - ImageScaner (папака с проектом)
-- Images (текстовые изображения)
+- Images (тестовые изображения)
 - OpenCV-build (готовый билд OpenCV)
